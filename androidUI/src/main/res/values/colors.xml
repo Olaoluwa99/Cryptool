@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#1b1b1b</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
 
     <color name="widget_blue">#4D5767</color>
     <color name="widget_grey_border">#757575</color>
@@ -10,4 +13,8 @@
     <color name="widget_dark_grey">#313131</color>
     <color name="widget_background_night">#3D3D3D</color>
     <color name="widget_error">#AD1010</color>
+    <color name="ic_launcher_background">#1b1b1b</color>
+
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorPrimaryTextHint">#7C7575</color>
 </resources>

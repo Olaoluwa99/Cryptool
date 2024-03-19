@@ -29,6 +29,7 @@ javaTarget = "1.8"
 leakcanary = "2.10"
 libphonenumber = "8.12.56"
 zxing = "3.5.1"
+constraintlayout = "2.1.4"
 
 [libraries]
 android_gradle_plugin = { module = "com.android.tools.build:gradle", version.ref = "android_gradle_plugin" }
@@ -64,6 +65,7 @@ testify_gradle_plugin = { module = "dev.testify:plugin", version.ref = "testify"
 leakcanary = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanary" }
 libphonenumber = { module = "com.googlecode.libphonenumber:libphonenumber", version.ref = "libphonenumber" }
 zxing = { module = "com.google.zxing:core", version.ref = "zxing" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
 [plugins]
 kotlin_serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

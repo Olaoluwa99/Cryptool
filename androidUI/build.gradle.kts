@@ -33,6 +33,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
@@ -70,6 +71,7 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.napier)
     implementation(libs.zxing)
+    implementation(libs.constraintlayout)
 
     testImplementation(libs.bundles.android.test.unit)
     androidTestImplementation(libs.bundles.android.test.instrumentation)

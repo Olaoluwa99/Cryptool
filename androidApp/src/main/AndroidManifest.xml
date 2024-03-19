@@ -70,5 +70,43 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+
+        <receiver
+            android:name=".ui.widget.CryptoolWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cryptool_widget_info" />
+        </receiver>
+
+
+        <activity
+            android:name=".ui.widget.InputMessageActivity"
+            android:theme="@style/Theme.TransparentActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".ui.widget.InputPasswordActivity"
+            android:theme="@style/Theme.TransparentActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
+            android:exported="false" />
+        <receiver
+            android:name=".ui.widget.PasswordClickReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.widget.receiver.password" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".ui.widget.MessageClickReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.widget.receiver.message" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest> 
